@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+#search-home-container {
+    background-color: var(--container-bg-color);
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    border-radius: 10px;
+    padding: 0 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#search-home-container div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#search-home-container a {
+    color: var(--inactive-text-color);
+    text-decoration: none;
+    font-size: 15pt;
+}
+
+#search-home-container ion-icon {
+    color: var(--inactive-text-color);
+    font-size: 25pt;
+    cursor: pointer;
+}

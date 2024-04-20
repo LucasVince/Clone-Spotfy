@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#back-forward {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#back-forward ion-icon {
+    background-color: #00000080;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 15pt;
+    cursor: pointer;
+}

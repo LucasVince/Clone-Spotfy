@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+#filter-container {
+    display: flex;
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.item-option {
+    text-decoration: none;
+    color: white;
+
+    background-color: var(--background-containers);
+
+    padding: 10px 18px;
+    border-radius: 20px;
+
+    transition-duration: 0.35s;
+}
+
+.item-option:hover {
+    background-color: var(--background-containers-hover);
+}
+
+#selected {
+    background-color: white;
+    color: black;
+}
+
+#recent-albuns-asrtistis-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.recent-albuns-asrtistis-item {
+    background-color: var(--album-bg-color);
+
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    cursor: pointer;
+    
+    transition: 0.25s;
+}
+
+.recent-albuns-asrtistis-item img {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.img-name-album-recent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-name-album-recent p {
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.play-buton-album-recent {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 30pt;
+    color: var(--spotfy-green);
+    opacity: 0%;
+}
+
+.recent-albuns-asrtistis-item:hover {
+    background-color: var(--background-containers-hover);
+}
+
+.recent-albuns-asrtistis-item:hover #play-buton-album-recent-rebirth {
+    opacity: 100%;
+}
